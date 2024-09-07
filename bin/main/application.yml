@@ -1,0 +1,54 @@
+eureka:
+   instance:
+      leaseRenewalIntervalInSeconds: 1
+      leaseExpirationDurationInSeconds: 2
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka/
+      healthcheck:
+         enabled: true
+      lease:
+         duration: 5
+logging:
+   level:
+      com.example.howtodoinjava: DEBUG
+ysoft:
+   applicatin:
+      angular: Web Development in Angular
+      react: Web Development in React Js
+      materialUi: Web Development in Material Ui
+      android: Application Development in Android
+      IOS: Application Development in IOS
+   command:
+      angular: ng
+      react: create-react-app
+      materialUi: create-react-app
+      android: create-react-app
+      IOS: create-react-app
+   targate:
+      javaModeldir: E:\\YbSoft\\YBProjectgenerator\\src\\main\\java\\com\\project\\generator\\model
+      javaRepodir: E:\\YbSoft\\YBProjectgenerator\\src\\main\\java\\com\\project\\generator\\repository
+      javaServicesdir: E:\\YbSoft\\YBProjectgenerator\\src\\main\\java\\com\\project\\generator\\services
+      javaServiceImpdir: E:\\YbSoft\\YBProjectgenerator\\src\\main\\java\\com\\project\\generator\\services\\Imp
+      javaRestdir: E:\\YbSoft\\YBProjectgenerator\\src\\main\\java\\com\\project\\generator\\rest
+   jFile:
+      model: Model
+      repository: repository
+      service: service
+      serviceImp: serviceImp
+      controller: controller
+   database:
+      oracle: oracle
+      mySQL: mySQL
+      mongo: mongo
+      postgreSQL: postgreSQL
+      cassandra: Cassandra
+      mariaDB: mariaDB
+      msql: msql
+      dB2: dB2
+      relation:
+         onetoone: OneToOne
+         onetomany: OneToManyL
+   element:
+     input:  <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+     #input: <input type='text' id='name' name='name' required minlength='4' maxlength='8' size='10' />
